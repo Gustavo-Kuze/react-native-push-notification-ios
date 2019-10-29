@@ -67,6 +67,7 @@ export type PushNotificationEventName = $Enum<{
  * See https://facebook.github.io/react-native/docs/pushnotificationios.html
  */
 class PushNotificationIOS {
+  _link: string;
   _data: Object;
   _alert: string | Object;
   _sound: string;
@@ -336,6 +337,7 @@ class PushNotificationIOS {
       Object.keys(nativeNotif).forEach(notifKey => {
         const notifVal = nativeNotif[notifKey];
         if (notifKey === 'aps') {
+          this._link = notifVal.link;
           this._alert = notifVal.alert;
           this._sound = notifVal.sound;
           this._badgeCount = notifVal.badge;
@@ -376,6 +378,10 @@ class PushNotificationIOS {
       this._notificationId,
       fetchResult,
     );
+  }
+
+  getLink(): ?string {
+    return this._link;
   }
 
   /**
