@@ -1,4 +1,4 @@
-# `@react-native-community/push-notification-ios`
+# `rn-push`
 
 React Native Push Notification API for iOS.
 
@@ -6,25 +6,25 @@ React Native Push Notification API for iOS.
 Install the library using either Yarn:
 
 ```
-yarn add @react-native-community/push-notification-ios
+yarn add rn-push
 ```
 
 or npm:
 
 ```
-npm install --save @react-native-community/push-notification-ios
+npm install --save rn-push
 ```
 
 You then need to link the native parts of the library for the platforms you are using. The easiest way to link the library is using the CLI tool by running this command from the root of your project:
 
 ```
-react-native link @react-native-community/push-notification-ios
+react-native link rn-push
 ```
 
 <details>
 <summary>Manually link the library</summary>
    
-- Add the following to your Project: `node_modules/@react-native-community/push-notification-ios/ios/PushNotificationIOS.xcodeproj`
+- Add the following to your Project: `node_modules/rn-push/ios/PushNotificationIOS.xcodeproj`
 - Add the following to Link Binary With Libraries: `libRNCPushNotificationIOS.a`
 </details>
 
@@ -73,5 +73,5 @@ import { PushNotificationIOS } from "react-native";
 to:
 
 ```javascript
-import PushNotificationIOS from "@react-native-community/push-notification-ios";
+import PushNotificationIOS from "rn-push";
 ```

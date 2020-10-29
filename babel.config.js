@@ -5,7 +5,7 @@ module.exports = {
       "module-resolver",
       {
         alias: {
-          "@react-native-community/push-notification-ios": "./js"
+          "rn-push": "./js"
         },
         cwd: "babelrc"
       }
