@@ -1,5 +1,5 @@
 {
-  "name": "rn-push-ios-android",
+  "name": "rn-push-ios",
   "version": "1.0.3",
   "description": "React Native Push Notification API for iOS and Android",
   "main": "js/index.js",
