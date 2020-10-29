@@ -5,7 +5,7 @@ module.exports = {
       "module-resolver",
       {
         alias: {
-          "rn-push": "./js"
+          "rn-push-ios-android": "./js"
         },
         cwd: "babelrc"
       }

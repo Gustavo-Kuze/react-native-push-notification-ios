@@ -15,7 +15,7 @@ import {
   TouchableHighlight,
   View,
 } from 'react-native';
-import PushNotificationIOS from 'rn-push';
+import PushNotificationIOS from 'rn-push-ios-android';
 
 class Button extends React.Component<$FlowFixMeProps> {
   render() {
