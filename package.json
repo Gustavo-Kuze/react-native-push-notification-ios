@@ -1,7 +1,7 @@
 {
   "name": "rn-push-ios",
-  "version": "1.0.3",
-  "description": "React Native Push Notification API for iOS and Android",
+  "version": "1.0.4",
+  "description": "React Native Push Notification API for iOS only",
   "main": "js/index.js",
   "author": "Rafael Lincoln <rafaellincolnpereira@gmail.com>",
   "contributors": ["Gustavo Kuze da Silva <gustavoksilva@gmail.com>"],
