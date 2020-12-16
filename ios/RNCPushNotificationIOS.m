@@ -285,14 +285,6 @@ RCT_EXPORT_MODULE()
 }
 
 RCT_EXPORT_METHOD(onFinishRemoteNotification:(NSString *)notificationId fetchResult:(UIBackgroundFetchResult)result) {
-  RNCRemoteNotificationCallback completionHandler = self.remoteNotificationCallbacks[notificationId];
-  if (!completionHandler) {
-    RCTLogError(@"There is no completion handler with notification id: %@", notificationId);
-    return;
-  }
-  if ([[[UIDevice currentDevice] systemVersion] floatValue] < 14.0) {
-    completionHandler(result);
-  }
   [self.remoteNotificationCallbacks removeObjectForKey:notificationId];
 }
 
